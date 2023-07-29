@@ -4,7 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean name="developer" class="com.paul.Developer">
+    <bean name="developer" class="com.springcore.Developer">
         <!--Setter injection-->
         <property name="id" value="1"/>
         <property name="name" value="Ankush"/>

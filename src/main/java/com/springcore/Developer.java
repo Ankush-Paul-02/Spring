@@ -1,4 +1,4 @@
-package com.paul;
+package com.springcore;
 
 public class Developer {
     private int id;
