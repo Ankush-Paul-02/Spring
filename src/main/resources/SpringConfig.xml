@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
@@ -9,6 +9,35 @@
         <property name="id" value="1"/>
         <property name="name" value="Ankush"/>
         <property name="skill" value="Java"/>
+    </bean>
+
+    <bean name="hacker" class="com.springcore.com.collections.Hacker">
+
+        <property name="id" value="1"/>
+        <property name="devices">
+            <list>
+                <value>'Android'</value>
+                <value>'MAC'</value>
+                <value>'Windows'</value>
+            </list>
+        </property>
+
+        <property name="addresses">
+            <set>
+                <value>'India'</value>
+                <value>'Japan'</value>
+                <value>'UAE'</value>
+            </set>
+        </property>
+
+        <property name="courses">
+            <map>
+                <entry key="Java" value="423"/>
+                <entry key="python" value="250"/>
+                <entry key="C++" value="350"/>
+            </map>
+        </property>
+
     </bean>
 
 </beans>
